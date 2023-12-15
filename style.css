@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial;
+}
+
+.repos__container {
+    position: relative;
+    /* overflow: hidden; */
+    width: 800px;
+    background-color: #f6f6f6;
+    margin: auto;
+}
+
+.get__repos {
+    padding: 20px;
+    display: flex;
+    background-color: #EEE;
+}
+
+.get__repos input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    font-size: 20px;
+    height: 54px;
+}
+
+.get__repos input:focus {
+    outline: 2px solid #f44336;
+}
+
+.get__button {
+    width: 140px;
+    margin-left: 10px;
+    height: 54px;
+    background-color: #f44336;
+    color: white;
+    line-height: 54px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.repositories__wrap {
+    margin-top: 30px;
+}
+
+.show__data,
+.github__user {
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.repo__box {
+    background-color: white;
+    padding: 15px;
+}
+
+.repo__box:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.repo__box a,
+.repo__box span {
+    float: right;
+    margin-left: 4px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    width: 90px;
+    text-align: center;
+    padding: 4px;
+    user-select: none;
+}
+
+.repo__box a {
+    text-decoration: none;
+    background-color: #e91e63;
+}
+
+.repo__box span {
+    background-color: #009688;
+}
+
+.nth__span {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.repositories__wrap,
+.repositori_window {
+    padding: 20px;
+}
+
+.github__user,
+.github__user2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 0px 100px 0.1px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s linear;
+    z-index: 1;
+}
+
+.github__user2 {
+    height: 200px;
+    align-items: start;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.github__user img,
+.github__user2 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ! Repository window style */
+.repositori_window {
+    display: none;
+    width: 100%;
+    background-color: #e0e0e0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cls_btn {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.repos__info {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid;
+    padding: 20px 0;
+}
+
+.repositori_window iframe {
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}

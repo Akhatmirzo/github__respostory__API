@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="repos__container">
+        <form class="get__repos">
+            <input type="text" placeholder="Github UserName" onkeypress="handle(event)" value="Akhatmirzo">
+            <button type="button" class="get__button">Get Repos</button>
+        </form>
+
+        <div class="repositories__wrap">
+            <div class="github__user">
+
+            </div>
+            <div class="show__data">
+                <span>No data to show</span>
+            </div>
+        </div>
+
+        <div class="repositori_window">
+            <div class="github__user2"></div>
+
+            <button class="cls_btn">Close</button>
+            <div class="repos__info">
+
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
